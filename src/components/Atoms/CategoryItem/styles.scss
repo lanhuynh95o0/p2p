@@ -1,0 +1,30 @@
+@import 'assets/css/mixin';
+
+.my-item-skill {
+  padding: 8px;
+  display: flex;
+  width: 100%;
+  text-align: left;
+  .skill-content {
+    flex: 1;
+  }
+
+  .skill-title {
+    @include text-base(400, 16px, $black);
+    margin-bottom: 0;
+  }
+
+  .sub-skill-title {
+    @include text-base(400, 12px, $dark-gray);
+    margin-bottom: 0;
+  }
+
+  .icon-checked {
+    padding: 0 5px;
+    @include text-base(400, 24px, $brand-color);
+  }
+
+  .icon-close {
+    @include text-base(400, 24px, $dark-gray);
+  }
+}

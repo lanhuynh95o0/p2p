@@ -1,0 +1,14 @@
+@import 'assets/css/mixin';
+.line-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  .label {
+    color: $dark-gray;
+    font-size: 16px;
+  }
+  .value {
+    color: #444545;
+    font-size: 16px;
+  }
+}

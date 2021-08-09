@@ -1,0 +1,68 @@
+@import "assets/css/mixin";
+@import "assets/css/button";
+
+.job-list {
+  .btn-job-name {
+    width: 100%;
+    text-align: left;
+  }
+
+  .btn-job-name span {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .partner-item {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $tablet-screen) {
+      width: 150px;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+
+    div {
+      text-align: left;
+      .title {
+        margin: 0;
+        @include text-base(300, 16px, $black);
+      }
+
+      .contact {
+        margin: 0;
+        @include text-base(300, 12px, $black);
+      }
+
+      .accepted {
+        color: $success;
+      }
+
+      .negotiating {
+        color: $warning;
+      }
+
+      .rejected {
+        color: $error;
+      }
+    }
+  }
+}
+
+.list-job-action {
+  margin: -12px -16px;
+  min-width: 204px;
+
+  .btn-action {
+    width: 100%;
+    text-align: left;
+    padding: 8px;
+  }
+}

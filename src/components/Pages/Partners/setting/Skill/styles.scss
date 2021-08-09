@@ -1,0 +1,13 @@
+@import 'assets/css/mixin';
+.verify-skill-container {
+  .header {
+    text-align: center;
+    @include text-base(600, 20px);
+  }
+  .sub-header {
+    text-align: center;
+    @include text-base(400, 16px);
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+}

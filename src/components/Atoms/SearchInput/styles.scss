@@ -1,0 +1,33 @@
+@import 'assets/css/variables.scss';
+@import 'assets/css/mixin';
+
+$height-control: 48px;
+
+#p2p-link {
+  .search-input {
+    border: none;
+    background: $white;
+    vertical-align: middle;
+    height: $height-control;
+    &:focus,
+    &:hover,
+    &:active,
+    &.ant-input-affix-wrapper-focused {
+      outline: none;
+      box-shadow: none;
+    }
+
+    svg {
+      color: $dark-gray;
+    }
+
+    input {
+      background: $white;
+    }
+
+    .my-search-icon {
+      font-size: 24px !important;
+      color: $dark-gray;
+    }
+  }
+}

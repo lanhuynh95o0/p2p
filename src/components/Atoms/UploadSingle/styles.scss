@@ -1,0 +1,79 @@
+@import 'assets/css/mixin';
+.upload-single-custom {
+  z-index: 3;
+  position: relative;
+  .action-upload {
+    margin-top: 10px;
+    @include text-base(600, 14px);
+    .link {
+      color: $text-link-color;
+    }
+  }
+}
+.list-file-uploaded {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  .file-item {
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    @include text-base(500, 15px);
+    .icon {
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .content {
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .content-uploading {
+      width: 70%;
+      display: inline-block;
+      .file-info {
+        text-align: left;
+        .file-name {
+          font-size: 16px;
+        }
+        .file-close {
+          float: right;
+          font-size: 24px;
+          color: $dark-gray;
+        }
+        .file-edit {
+          margin-left: 7px;
+          font-size: 20px;
+          color: $text-link-color;
+        }
+      }
+    }
+  }
+}
+
+#my-dragger {
+  .dragger-custom {
+    border: 2px dashed #eaebee;
+    .ant-upload-btn {
+      padding: 30px;
+    }
+  }
+  .link {
+    color: $brand-color;
+  }
+
+  .my-dragger-background {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    pointer-events: none;
+  }
+  .my-dragger-background-active {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}

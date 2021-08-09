@@ -1,0 +1,37 @@
+@import 'assets/css/mixin';
+
+.cost-input-custom {
+  display: flex !important;
+  background-color: $light-gray;
+  width: 100%;
+
+  .ant-select-disabled.ant-select-single:not(.ant-select-customize-input)
+    .ant-select-selector {
+    color: $black;
+  }
+
+  .col-left {
+    width: 30%;
+  }
+
+  .col-right {
+    width: 70%;
+  }
+
+  .my-input-number {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: $light-gray;
+    color: $black;
+
+    .ant-input-number-input-wrap {
+      height: 100%;
+
+      input {
+        height: 100%;
+        @include text-base(300, 16px, $black);
+      }
+    }
+  }
+}

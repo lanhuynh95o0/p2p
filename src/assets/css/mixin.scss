@@ -1,0 +1,41 @@
+@import 'assets/css/variables';
+
+@mixin text-base($fontWeight: 400, $font-size: 16px, $color: $text-base-color) {
+  font-weight: $fontWeight;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  font-size: $font-size;
+  color: $color;
+}
+
+@mixin create-class($attribute: "margin-top", $list: $listMarginTop) {
+  @each $name, $px in $list {
+    .#{$name} {
+      #{$attribute}: $px;
+    }
+  }
+}
+
+@function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
+  @return if(breakpoint-min($name, $breakpoints)==null, "", "-#{$name}");
+}
+
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+  $min: map-get($breakpoints, $name);
+  @return if($min !=0, $min, null);
+}
+
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  }
+
+  @else {
+    @content;
+  }
+}

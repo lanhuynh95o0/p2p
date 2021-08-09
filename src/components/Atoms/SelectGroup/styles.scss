@@ -1,0 +1,59 @@
+@import 'assets/css/variables';
+$height-control: 48px;
+.select-group-common {
+  width: 100%;
+  height: $height-control;
+  .ant-select-selector {
+    border: none !important;
+    box-shadow: none !important;
+    height: inherit !important;
+    text-align: left;
+    .ant-select-selection-placeholder {
+      color: $input-placeholder-color;
+      opacity: 1;
+    }
+    .ant-select-selection-search input {
+      height: $height-control !important;
+    }
+    .ant-select-selection-placeholder,
+    .ant-select-selection-item {
+      line-height: $height-control !important;
+    }
+  }
+  .ant-select-arrow {
+    height: 100%;
+    margin: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: unset;
+    color: $dark-gray;
+  }
+  .item-disabled {
+    background: black !important;
+  }
+}
+
+#my-select-group {
+  .select-group-custom {
+    @extend .select-group-common;
+    .ant-select-selector {
+      background: $input-bg-color;
+    }
+  }
+  .select-group-white-custom {
+    @extend .select-group-common;
+    .ant-select-selector {
+      background: white;
+    }
+  }
+}
+
+.dropdown-group-skill {
+  .ant-select-item {
+    &.ant-select-item-group {
+      color: #27aae1;
+      font-size: 17px;
+    }
+  }
+}

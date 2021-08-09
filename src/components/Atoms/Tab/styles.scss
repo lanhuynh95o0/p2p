@@ -1,0 +1,15 @@
+@import 'assets/css/mixin';
+.tab-custom {
+  .tab-group {
+    .tab-item {
+      padding: 15px 20px;
+      text-align: center;
+      @include text-base(600, 16px, #444545);
+      cursor: pointer;
+    }
+    .tab-item-selected {
+      border-top: 4px solid $brand-color;
+      background: white;
+    }
+  }
+}

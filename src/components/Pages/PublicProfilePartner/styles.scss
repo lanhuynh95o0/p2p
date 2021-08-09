@@ -1,0 +1,243 @@
+@import "assets/css/variables.scss";
+@import "assets/css/mixin";
+@import "assets/css/global";
+
+$avatar-size: 160px;
+$avatar-mobile-size: 80px;
+
+.partner-profile-not-found {
+  height: 100vh !important;
+}
+
+#partners-profile {
+  background-color: $light-gray;
+  padding: 0 15px;
+
+  @media (min-width: $tablet-screen) {
+    padding: 0 165px;
+  }
+
+  .partners-profile {
+    .partners-profile-top {
+      .cover {
+        position: relative;
+        background-color: black;
+
+        video {
+          height: 384px;
+        }
+
+        .cover-wrapper {
+          position: relative;
+        }
+
+        .cover-photo {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+
+          @media (max-width: $mobile-screen) {
+            height: auto;
+          }
+        }
+      }
+
+      .profile-top-info {
+        background-color: $white;
+
+        .top-info-left {
+          position: relative;
+          margin-top: -100px;
+          white-space: nowrap;
+
+          @media (max-width: $mobile-screen) {
+            margin-top: -50px;
+          }
+
+          .avatar {
+            width: $avatar-size;
+            height: $avatar-size;
+            border: solid $white 5px;
+            object-fit: cover;
+
+            @media (max-width: $mobile-screen) {
+              width: $avatar-mobile-size;
+              height: $avatar-mobile-size;
+            }
+          }
+
+          .partner-name {
+            display: inline-block;
+            vertical-align: bottom;
+            @include text-base(500, 27px, $black);
+
+            @media (max-width: $mobile-screen) {
+              display: block;
+              white-space: break-spaces;
+            }
+          }
+        }
+
+        .top-info-right {
+          display: table;
+          height: 100%;
+          width: 100%;
+          text-align: right;
+
+          .btn-invitation {
+            vertical-align: middle;
+            display: table-cell;
+          }
+        }
+      }
+    }
+
+    .content {
+      padding: 5px 0 !important;
+
+      .block {
+        background-color: $white;
+        margin: 20px 0;
+
+        .title {
+          @include text-base(600, 22px, $black);
+        }
+
+        .param-wrapper {
+          @include text-base(400, 16px, $black);
+          text-align: left;
+          overflow-wrap: break-word;
+        }
+
+        .info {
+          padding: 14px 0;
+
+          span {
+            @include text-base(400, 16px, $black);
+            text-align: right;
+            display: block;
+          }
+
+          p {
+            @include text-base(400, 16px, $dark-gray);
+            margin: 0;
+          }
+
+          a {
+            float: right;
+            @include text-base(400, 16px, $text-link-color);
+          }
+        }
+
+        .item-skill {
+          padding: 10px 0;
+          display: table;
+          width: 100%;
+
+          .skill-content {
+            display: inline-block;
+          }
+
+          .skill-title {
+            @include text-base(400, 16px, $black);
+            margin-bottom: 0;
+          }
+
+          .sub-skill-title {
+            @include text-base(400, 12px, $dark-gray);
+            margin-bottom: 0;
+          }
+
+          .icon-checked {
+            display: table-cell;
+            vertical-align: middle;
+            width: 1px;
+            padding: 0 5px;
+            @include text-base(400, 25px, $brand-color);
+          }
+        }
+
+        .statistic {
+          text-align: center;
+
+          .title {
+            @include text-base(400, 16px, $black);
+          }
+
+          .count-number {
+            @include text-base(600, 33px, $black);
+          }
+        }
+
+        .review-item {
+          // .review-avatar {
+          //   position: relative;
+          // }
+          // img {
+          //   position: absolute;
+          //   top: 0;
+          //   left: 0;
+          //   width: 100%;
+          //   height: 100%;
+          // }
+          .name {
+            @include text-base(600, 16px, $black);
+          }
+          .time {
+            @include text-base(300, 14px, $black);
+            float: right;
+          }
+          .content {
+            @include text-base(300, 16px, $black);
+          }
+        }
+      }
+
+      .header-job {
+        @include text-base(600, 16px, $black);
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      .job {
+        .avatar {
+          width: 56px;
+          height: 56px;
+          object-fit: cover;
+        }
+
+        .name {
+          @include text-base(600, 16px, $black);
+        }
+
+        .sub-name {
+          @include text-base(200, 12px, $dark-gray);
+        }
+
+        .status {
+          background-color: $warning-light;
+          float: right;
+          @include text-base(400, 14px, $warning);
+        }
+
+        .description {
+          @include text-base(400, 14px, $black);
+        }
+
+        .assigned-job {
+          .title {
+            @include text-base(300, 16px, $black);
+          }
+
+          .list {
+            float: right;
+
+            .item {
+              @include text-base(400, 14px, $black);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+@import 'assets/css/variables.scss';
+@import 'assets/css/mixin';
+
+.my-modal {
+  background-color: $white;
+  padding: 0 !important;
+  height: 90%;
+
+  .ant-modal-content {
+    box-shadow: none;
+    background-color: transparent;
+    height: 100%;
+
+    .ant-modal-body {
+      height: 100%;
+      overflow-y: auto;
+
+      @media (max-width: $mobile-screen) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
+  .title {
+    @include text-base(600, 27px, $black);
+  }
+
+  .label-bold {
+    @include text-base(600, 16px, $black);
+  }
+
+  .label {
+    @include text-base(400, 16px, $dark-gray);
+  }
+
+  .description {
+    @include text-base(400, 16px, $black);
+    margin-bottom: 20px;
+  }
+
+  .input-label {
+    @include text-base(400, 12px, $black);
+  }
+
+  .input-text {
+    .ant-input-group-addon {
+      border: none !important;
+    }
+
+    @include text-base(400, 16px, $black);
+    overflow: hidden;
+  }
+
+  .my-modal-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+
+    .my-modal-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      //justify-content: center;
+      max-width: 80%;
+
+      @media (max-width: 400px) {
+        max-width: 95%;
+      }
+
+      .line-text {
+        position: relative;
+        text-align: center;
+        padding: 20px 0;
+        margin: 0 auto;
+
+        .line {
+          width: 100%;
+          height: 1px;
+          border-top: 1px solid $light-gray;
+          top: 50%;
+          position: absolute;
+        }
+
+        .label {
+          position: relative;
+          background-color: $white;
+          padding: 0 10px;
+          @include text-base(400, 14px, $dark-gray);
+        }
+      }
+
+      .btn-more {
+        position: absolute;
+        margin: 0 30px;
+        right: 0;
+        @include text-base(500, 16px, $dark-gray);
+      }
+
+      .view-center {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .view-content {
+        padding: 70px 0;
+      }
+    }
+  }
+}
+
+// custom modal
+.ant-modal-wrap {
+  .ant-modal-confirm-confirm {
+    @media (max-width: $mobile-screen) {
+      max-width: 75% !important;
+
+      .ant-modal-body {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+  }
+}

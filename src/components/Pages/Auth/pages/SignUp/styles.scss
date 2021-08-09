@@ -1,0 +1,129 @@
+@import 'assets/css/mixin';
+
+.modal-verify-email {
+  .header {
+    margin-top: 40px;
+    text-align: center;
+    @include text-base(600, 21px);
+  }
+  .sub-header {
+    text-align: center;
+    margin-bottom: 20px;
+    @include text-base(400, 16px);
+  }
+  .input-code {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .resend-code {
+    margin-top: 10px;
+    text-align: center;
+    @include text-base(400, 16px);
+    .text-resend {
+      color: #0070c9;
+      cursor: pointer;
+    }
+    .test-resend-disabled {
+      color: #ccc;
+    }
+  }
+}
+
+.sign-up-page {
+  padding-bottom: 16px;
+  .sign-up-header {
+    text-align: right;
+    padding: 0 10vw;
+    margin-top: 20px;
+
+    @media (max-width: $mobile-screen) {
+      padding: 0 5vw;
+    }
+
+    .question {
+      @include text-base(500);
+    }
+  }
+  .sign-up-content {
+    margin-top: 100px;
+
+    @media (max-width: $mobile-screen) {
+      margin-top: 30px;
+    }
+
+    .sign-up-step {
+      .content {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (max-width: $mobile-screen) {
+          margin-top: 25px;
+        }
+
+        .header-step {
+          text-align: center;
+          @include text-base(600, 27px);
+        }
+        .sub-header {
+          text-align: center;
+          @include text-base(400, 16px);
+        }
+        .wrapper-step-2,
+        .wrapper-step-1 {
+          max-width: 400px;
+        }
+        .wrapper-step-3,
+        .wrapper-step-4,
+        .wrapper-step-5,
+        .wrapper-step-6 {
+          max-width: 450px;
+        }
+        .wrapper-step-6 {
+          .action {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            color: $brand-color;
+            font-weight: 600;
+            cursor: pointer;
+            .icon-add-client {
+              color: $brand-color;
+            }
+          }
+        }
+
+        .wrapper-step-4 {
+          .upload-logo {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            .upload-control {
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+
+    .ant-form {
+      @media (max-width: $mobile-screen) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+
+  .success-page {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.ant-form-item-explain.ant-form-item-explain-error {
+  padding: 0 !important;
+}

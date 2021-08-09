@@ -1,0 +1,45 @@
+@import 'assets/css/mixin';
+.button-filter-custom {
+  padding: 0 0 0 20px !important;
+  color: $dark-gray;
+  .close-icon {
+    font-size: 22px !important;
+    color: $dark-gray;
+  }
+  .label {
+    @include text-base(500, 16px);
+    color: $dark-gray;
+  }
+} 
+.menu-filter-column-custom {
+  min-width: 250px;
+  max-width: 350px;
+  max-height: 350px;
+  overflow: auto;
+ 
+  .option-selected {
+    @include text-base(400, 14px);
+    margin-bottom: 10px;
+  }
+  .menu-item {
+    padding: 10px;
+    border-bottom: 1px solid #FCFCFC;
+    @include text-base(400, 16px);
+    display: flex;
+    align-items: center;
+    .check-box-custom {
+      .ant-checkbox-checked .ant-checkbox-inner {
+        background: $brand-color;
+        border-color: $brand-color;
+      }
+      .ant-checkbox-inner {
+        width: 24px;
+        height: 24px;
+        &::after {
+          width: 7px;
+          height: 12px;
+        }
+      }
+    }
+  }
+}

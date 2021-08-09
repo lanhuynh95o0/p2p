@@ -1,0 +1,16 @@
+@import 'assets/css/variables';
+@import 'assets/css/mixin';
+
+.home-page {
+  .view-all-btn {
+    @include text-base(semibold, 15px, $dark-gray);
+  }
+
+  .dash-board-title {
+    @include text-base(semibold, 16px, $black);
+  }
+
+  .partner-name {
+    @include text-base(semibold, 16px, $black);
+  }
+}

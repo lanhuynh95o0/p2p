@@ -1,0 +1,17 @@
+@import 'assets/css/mixin';
+
+.auth-page {
+  .header-auth {
+    text-align: right;
+    padding: 0 10vw;
+    margin-top: 20px;
+
+    @media (max-width: $mobile-screen) {
+      padding: 0 5vw;
+    }
+
+    .question {
+      @include text-base(500);
+    }
+  }
+}

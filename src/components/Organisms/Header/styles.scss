@@ -1,0 +1,97 @@
+@import 'assets/css/mixin';
+@import 'assets/css/variables.scss';
+
+#site-header {
+  background: $white;
+  padding: 0 16px;
+  height: $header-height;
+  line-height: $header-height;
+
+  .header-right {
+    flex-flow: nowrap;
+    
+    @media (max-width: 360px) {
+      width: 35%;
+    }
+
+    .useless-text-mobile {
+      @media (max-width: $mobile-screen) {
+        display: none;
+      }
+    }
+  }
+
+  .user-info {
+    display: flex;
+    flex: 1;
+    align-items: center;
+
+    .username {
+      flex: 1;
+
+      @include text-base(600, 15px);
+
+
+    }
+  }
+
+  .logo-wrapper {
+    img {
+      width: 163.72px;
+
+      @media (max-width: $mobile-screen) {
+        width: 50px;
+      }
+
+      @media (max-width: 360px) {
+        width: 40px;
+      }
+    }
+  }
+
+  .ant-btn {
+    & > span {
+      & + .anticon {
+        @media (max-width: $mobile-screen) {
+          margin-left: 0px !important;
+        }
+      }
+    }
+  }
+
+  .text-1-line {
+    @media (max-width: $mobile-screen) {
+      white-space: nowrap;
+      width: 150px;
+      display: block;
+    }
+
+    @media (max-width: 400px) {
+      width: 70px;
+    }
+  }
+}
+
+.my-header {
+  display: table;
+  width: 100%;
+  .search-input-wrapper {
+    display: table-cell;
+    width: 100%;
+  }
+  .dropdown {
+    display: inline-block;
+  }
+}
+.header-add-menu {
+  .header-add-item {
+    font-size: 16px !important;
+    display: flex;
+    align-items: center;
+    min-width: 240px;
+    height: 48px;
+    .anticon {
+      font-size: 24px !important;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import 'assets/css/variables.scss';
+@import 'assets/css/mixin';
+
+#my-check-share {
+  .title {
+    @include text-base(400, 12px, $black);
+  }
+  .ant-checkbox-group-item {
+    @include text-base(400, 16px, $black);
+    padding: 12px;
+    // display: block;
+    text-align: left;
+
+    .ant-checkbox-inner {
+      width: 24px;
+      height: 24px;
+      background-color: $white;
+      border-color: $medium-gray;
+      border-width: 2px;
+
+      &:after {
+        top: 40%;
+        width: 7.714286px;
+        height: 16.142857px;
+      }
+    }
+
+    .ant-checkbox-checked {
+      .ant-checkbox-inner {
+        background-color: $brand-color;
+        border-color: $brand-color;
+      }
+    }
+  }
+}

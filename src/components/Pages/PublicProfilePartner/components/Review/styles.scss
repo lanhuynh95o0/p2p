@@ -1,0 +1,15 @@
+@import 'assets/css/variables.scss';
+@import 'assets/css/mixin';
+@import 'assets/css/global';
+
+.review-item {
+  .name {
+    @include text-base(600, 16px, $black);
+    margin-bottom: 0;
+  }
+
+  .time {
+    @include text-base(300, 14px, $black);
+    margin-bottom: 0;
+  }
+}

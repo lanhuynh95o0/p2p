@@ -1,0 +1,15 @@
+@import 'assets/css/mixin';
+.list-client-selected {
+  .client-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    margin-top: 20px;
+    .name {
+      @include text-base(500, 15px);
+    }
+    .icon-close {
+      font-size: 22px;
+    }
+  }
+}

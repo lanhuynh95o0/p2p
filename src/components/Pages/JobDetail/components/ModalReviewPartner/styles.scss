@@ -1,0 +1,22 @@
+@import 'assets/css/variables.scss';
+@import 'assets/css/mixin';
+
+.modal-review-partner {
+  .ant-rate {
+    .ant-rate-star-full{
+      div {
+        div {
+          color: $warning;
+        }
+      }
+    }
+    div {
+      div {
+        color: $medium-gray;
+        span {
+          font-size: 46px;
+        }
+      }
+    }
+  }
+}

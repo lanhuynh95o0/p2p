@@ -1,0 +1,35 @@
+.map-wrapper {
+  position: relative;
+  width: 100%;
+
+  .map-cls {
+    width: 100%;
+    height: 300px;
+
+    &__center-pin {
+      width: 27px;
+      height: 43px;
+      display: block;
+      content: " ";
+      position: absolute;
+      user-select: none;
+      top: 50%;
+      left: 50%;
+      margin: -43px 0 0 -14px;
+      background: url("../../../assets/images/map/marker.png");
+      background-size: 27px 42px; /* Since I used the HiDPI marker version this compensates for the 2x size */
+      pointer-events: none; /* This disables clicks on the marker. Not fully supported by all major browsers, though */
+    }
+  }
+
+  .map-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #cccccc4d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

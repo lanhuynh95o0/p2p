@@ -1,0 +1,88 @@
+@import 'assets/css/variables';
+@import 'assets/css/mixin';
+
+#my-input {
+  .input-custom {
+    background: $input-bg-color;
+    border: none;
+    padding: 11.5px 12px;
+    width: 100%;
+    @include text-base(400, 16px, $black);
+
+    .ant-input-suffix {
+      margin: 0;
+      padding: 0;
+    }
+    input {
+      background: $input-bg-color;
+      border: none;
+      box-shadow: none;
+    }
+    &:focus,
+    &:hover {
+      border: none;
+      box-shadow: none;
+    }
+
+    input {
+      &::placeholder {
+        @include text-base(400, 16px, $input-placeholder-color);
+      }
+      &::-webkit-calendar-picker-indicator {
+        color: $dark-gray;
+      }
+    }
+    &::placeholder {
+      @include text-base(400, 16px, $input-placeholder-color);
+    }
+    resize: none;
+  }
+  .my-input-suffix-icon {
+    font-size: 24px;
+    color: $dark-gray;
+    padding: 0;
+  }
+  .my-input-white {
+    @extend .input-custom;
+    background-color: $white !important;
+    input {
+      background-color: $white !important;
+    }
+  }
+}
+
+.ant-form-item-has-error .input-custom {
+  border-bottom: 1px solid red !important;
+}
+
+.my-input-date {
+  border-radius: 10px;
+  overflow: hidden;
+  .ant-picker-header-super-prev-btn,
+  .ant-picker-header-super-next-btn {
+    display: none;
+  }
+  .ant-picker-prev-icon,
+  .ant-picker-next-icon {
+    color: $black;
+  }
+  .ant-picker-header-view {
+    @include text-base(600, 16px, $black);
+  }
+  thead tr th {
+    color: $brand-color;
+  }
+  .ant-picker-cell-selected {
+    .ant-picker-cell-inner {
+      border-radius: 50%;
+      background-color: $brand-color !important;
+    }
+  }
+  .ant-picker-cell-today {
+    .ant-picker-cell-inner {
+      &:before {
+        border: none !important;
+      }
+    }
+  }
+}

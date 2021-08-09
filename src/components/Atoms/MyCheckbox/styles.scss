@@ -1,0 +1,30 @@
+@import 'assets/css/mixin';
+
+#my-checkbox {
+  .ant-checkbox-group-item {
+    @include text-base(400, 16px, $black);
+    display: block;
+    text-align: left;
+
+    .ant-checkbox-inner {
+      width: 24px;
+      height: 24px;
+      background-color: $white;
+      border-color: $medium-gray;
+      border-width: 2px;
+
+      &:after {
+        top: 40%;
+        width: 7.714286px;
+        height: 16.142857px;
+      }
+    }
+
+    .ant-checkbox-checked {
+      .ant-checkbox-inner {
+        background-color: $brand-color;
+        border-color: $brand-color;
+      }
+    }
+  }
+}

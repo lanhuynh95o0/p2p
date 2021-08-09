@@ -1,0 +1,27 @@
+@import "assets/css/variables";
+@import "assets/css/mixin";
+
+.form-item-multiple-emails {
+    .email-display {
+        text-align: left;
+        font-size: 12px;
+
+        &__label {
+            font-weight: 500;
+        }
+
+        &__message {
+            color: $success;
+
+            .icon-sm {
+                font-size: large;
+            }
+        }
+    }
+
+    .btn-secondary-custom {
+        .my-icon-md {
+            color: inherit;
+        }
+    }
+}

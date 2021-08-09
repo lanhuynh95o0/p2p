@@ -1,0 +1,63 @@
+@import 'assets/css/mixin';
+@import 'assets/css/variables.scss';
+
+.login-container {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: $mobile-screen) {
+    margin-top: 4vh;
+  }
+
+  .alert-error {
+    @include text-base(400, 15px, #444545);
+    display: flex;
+    background: #FAEEED;
+    padding: 12px;
+    min-width: 500px;
+    .icon-close {
+      color: red;
+      margin-right: 10px;
+    }
+    .text-link {
+      color: #0070C9;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+  }
+  .login-form {
+    max-width: 400px;
+    width: calc(100% - 30px);
+
+    .title {
+      @include text-base(600, 27px);
+    }
+
+    .form {
+      margin-top: 5vh;
+
+      .link-forgot-password {
+        @include text-base(400, 13px, $text-link-color);
+      }
+    }
+  }
+}
+
+.help-text {
+  max-width: 700px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  
+  @include text-base(400, 16px, #444545);
+
+  @media (min-width: $mobile-screen) {
+    margin-top: 20px;
+  }
+
+  .link {
+    color: $text-link-color;
+  }
+}

@@ -1,0 +1,14 @@
+@import 'assets/css/mixin';
+.forgot-email-step {
+  .content {
+    margin-top: 50px;
+    .header-step {
+      text-align: center;
+      @include text-base(600, 27px);
+    }
+    .sub-header {
+      text-align: center;
+      @include text-base(400, 16px);
+    }
+  }
+}

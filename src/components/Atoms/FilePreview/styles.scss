@@ -1,0 +1,23 @@
+@import 'assets/css/variables.scss';
+@import 'assets/css/mixin';
+#my-file-preview {
+  display: flex;
+  img {
+    margin-right: 16px;
+  }
+  .file-preview-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .file-name {
+      @include text-base(400, 16px, $black);
+      line-height: 21px;
+    }
+    .file-preview-status {
+      @include text-base(400, 12px, $dark-gray);
+      line-height: 16px;
+      margin: 0;
+      text-align: left;
+    }
+  }
+}

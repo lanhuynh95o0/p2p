@@ -1,0 +1,40 @@
+@import 'assets/css/variables.scss';
+@import 'assets/css/mixin';
+
+.partner-employee-grid {
+  .employee-item {
+    position: relative;
+    .employee-card {
+      background-color: $white;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+      .header {
+        display: flex;
+        align-items: center;
+        .name {
+          flex: 1;
+          @include text-base(300, 16px, $black);
+          margin: 0;
+        }
+        .btn-icon {
+          @include text-base(300, 24px, $black);
+          span {
+            height: 24px;
+          }
+          margin-right: -16px;
+          padding: 0 16px;
+        }
+        .my-btn-no-style {
+          @media (max-width: $mobile-screen) {
+            height: unset;
+          }
+        }
+      }
+      .body {
+        flex: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import 'assets/css/mixin';
+
+.ant-popover-arrow {
+  display: none;
+}
+
+.ant-popover-inner-content {
+  .my-popover-container {
+    .my-popover-item {
+      @include text-base(400, 16px, $black);
+      background-color: white;
+      min-width: 240px;
+      display: block;
+      text-align: left;
+    }
+  }
+}

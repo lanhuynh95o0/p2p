@@ -1,0 +1,19 @@
+@import "assets/css/mixin";
+
+.input-code-custom {
+  width: unset !important;
+  input {
+    width: 48px !important;
+    height: 48px !important;
+    border: none !important;
+    background: $input-bg-color !important;
+    margin-right: 10px;
+    font-family: "Montserrat", sans-serif;
+
+    @include text-base(600, 16px);
+    
+    @media (max-width: $mobile-screen) {
+      width: 32px !important;
+    }
+  }
+}

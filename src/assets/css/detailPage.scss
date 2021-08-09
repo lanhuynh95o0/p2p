@@ -1,0 +1,153 @@
+@import 'assets/css/mixin';
+
+#detail-page {
+  .breadcrumb {
+    padding-bottom: 16px;
+    display: table;
+    width: 100%;
+    .my-breadcrumb {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  .detail-header {
+    display: flex;
+    align-items: center;
+  }
+  .header-text {
+    @include text-base(600, 33px, $black);
+    line-height: 40px;
+    margin: 12px 0;
+    flex: 1;
+  }
+  .confirm-text {
+    @include text-base(600, 22px, $black);
+  }
+
+  .status-text {
+    @include text-base(400, 14px, $warning);
+  }
+
+  .text-bold-md {
+    @include text-base(500, 16px, $black);
+    margin: 0;
+    line-height: 48px;
+  }
+
+  .text-md {
+    @include text-base(400, 16px, $black);
+    margin: 0;
+    line-height: 48px;
+  }
+
+  .info-header {
+    display: flex;
+    align-items: center;
+    .title {
+      flex: 1;
+      @include text-base(500, 16px, $black);
+      margin: 0;
+      line-height: 48px;
+    }
+
+    .btn-edit {
+      @include text-base(500, 15px, $dark-gray);
+    }
+  }
+
+  .statistic-item {
+    padding: 16px;
+    background-color: $white;
+    text-align: center;
+    .statistic-item-name {
+      @include text-base(300, 16px, $black);
+      margin-bottom: 6px;
+      line-height: 21px;
+    }
+    .statistic-item-value {
+      @include text-base(600, 33px, $black);
+      line-height: 40px;
+      margin: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+  }
+  .info-body {
+    background-color: $white;
+    padding: 16px;
+
+    .info-content {
+      @include text-base(400, 16px, $black);
+      line-height: 21px;
+    }
+
+    .info-name {
+      @include text-base(300, 16px, $dark-gray);
+      line-height: 21px;
+    }
+
+    .info-title {
+      @include text-base(600, 12px, $black);
+    }
+
+    .text-status {
+      @include text-base(400, 12px, $dark-gray);
+    }
+  }
+
+  .user-item {
+    display: flex;
+    align-items: center;
+    padding: 4px 0;
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .name {
+      flex: 1;
+      @include text-base(400, 16px, $black);
+      padding: 0 16px;
+    }
+    .info {
+      flex: 1;
+      overflow: hidden;
+    }
+    .text-extra {
+      @include text-base(400, 12px, $dark-gray);
+      padding: 0 16px;
+    }
+  }
+
+  .doc-list {
+    background-color: $white;
+    padding: 16px 0;
+
+    .doc-item {
+      display: flex;
+      align-items: center;
+
+      padding: 4px 16px;
+      border-bottom: 2px solid $input-bg-color;
+      .name {
+        @include text-base(400, 16px, $black);
+        flex: 1;
+        padding: 0 16px;
+      }
+    }
+    .doc-item:last-child {
+      border: none;
+    }
+  }
+}
+
+.block-document-detail {
+  .ant-form-item-explain {
+    text-align: left;
+  }
+}

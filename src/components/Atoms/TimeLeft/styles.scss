@@ -1,0 +1,31 @@
+@import 'assets/css/variables';
+@import 'assets/css/mixin';
+#my-time-left {
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  width: fit-content;
+  overflow: hidden;
+  padding: 4px 6px;
+  .my-time-text {
+    font-size: 14px;
+    padding: 0 6px;
+  }
+  .my-time-icon {
+    font-size: 24px;
+  }
+}
+.my-time-status-good {
+  color: $success;
+  background-color: $success-light;
+}
+
+.my-time-status-warning {
+  color: $warning;
+  background-color: $warning-light;
+}
+
+.my-time-status-danger {
+  color: $error;
+  background-color: $error-light;
+}

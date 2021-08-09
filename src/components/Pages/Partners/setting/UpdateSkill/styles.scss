@@ -1,0 +1,50 @@
+@import 'assets/css/mixin';
+.update-skill-page {
+  .header {
+    @include text-base(600, 27px, #444545);
+    text-align: center;
+  }
+  .sub-header {
+    text-align: center;
+    @include text-base(400, 16px, #444545);
+  }
+
+  .content {
+    margin-top: 40px;
+    .title {
+      @include text-base(600, 12px, #444545);
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .line-item {
+      display: flex;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      align-items: center;
+      .info {
+        flex: 1;
+
+        .name {
+          @include text-base(400, 16px, #444545);
+        }
+        .sub-name {
+          @include text-base(400, 12px, #878787);
+        }
+        .Pending {
+          color: $warning;
+        }
+        .Rejected {
+          color: $error;
+        }
+        .Verified, .Approved {
+          color: $brand-color;
+        }
+      }
+      .action {
+        .icon-delete {
+          color: #ccc;
+        }
+      }
+    }
+  }
+}

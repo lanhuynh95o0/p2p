@@ -1,0 +1,171 @@
+@import 'assets/css/variables';
+@import 'assets/css/mixin';
+
+$height-control: 48px;
+// Select control
+#my-select {
+  display: inline-block;
+  width: 100%;
+
+  .select-common {
+    width: 100%;
+    position: relative;
+    font-size: 16px;
+    height: $height-control;
+
+    .ant-select-selector {
+      border: none;
+      box-shadow: none;
+      height: $height-control;
+
+      @media (max-width: $mobile-screen) {
+        padding-right: 0;
+      }
+
+      .ant-select-selection-search input {
+        height: $height-control;
+      }
+
+      .ant-select-selection-placeholder {
+        text-align: left;
+        color: $input-placeholder-color;
+        opacity: 1;
+        line-height: $height-control;
+      }
+
+      .ant-select-selection-item {
+        line-height: $height-control;
+      }
+    }
+
+    .ant-select-arrow {
+      width: unset;
+      right: 3%;
+      top: 0;
+      display: flex;
+      align-items: center;
+      margin: 0;
+      height: 100%;
+    }
+
+    .icon-caret-custom,
+    .icon-clear-custom {
+      color: $dark-gray;
+    }
+
+    .icon-clear-custom {
+      font-size: 22px;
+    }
+
+    .icon-caret-custom {
+      font-size: 14px;
+    }
+  }
+
+  .select-custom {
+    @extend .select-common;
+  }
+
+  .select-custom-white {
+    @extend .select-common;
+
+    .ant-select-selector {
+      background: $white;
+
+      .ant-select-selection-placeholder {
+        color: $black;
+      }
+    }
+  }
+
+  .select-custom-gray {
+    @extend .select-common;
+
+    .ant-select-selector {
+      background: $light-gray;
+
+      .ant-select-selection-placeholder {
+        color: $dark-gray;
+      }
+    }
+  }
+
+  .select-custom-prefix {
+    .ant-select-selector {
+      border: none;
+      background: $input-bg-color;
+      box-shadow: none;
+
+      .ant-select-selection-placeholder {
+        color: $input-placeholder-color;
+        @include text-base(400, 14px, $black);
+        opacity: 1;
+      }
+    }
+  }
+
+  .my-select-file {
+    @extend .select-custom;
+    .ant-select-selector {
+      background-color: $white;
+      height: 56px;
+      .ant-select-selection-item {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+// End select control
+
+.ant-select-selection-item {
+  text-align: left;
+
+  .my-select-selected-icon,
+  .my-select-option-icon {
+    display: none;
+  }
+}
+
+.ant-form-item-has-error .select-custom .ant-select-selector {
+  border-bottom: 1px solid red;
+}
+
+.my-select-option {
+  .ant-select-item-option-content {
+    display: flex;
+    align-items: center;
+    border: none;
+
+    .my-select-text {
+      flex: 1;
+    }
+
+    .my-select-option-icon {
+      width: 40px;
+      height: 40px;
+      margin-right: 12px;
+    }
+
+    .my-select-selected-icon {
+      font-size: 24px;
+      color: $brand-color;
+      display: none;
+    }
+  }
+
+  .my-select-custom-item {
+    flex: 1;
+  }
+}
+
+.ant-select-item-option-selected {
+  .my-select-selected-icon {
+    display: inline-block !important;
+  }
+}
+
+.ant-select-item-option-disabled {
+  color: rgba(0, 0, 0, 0.25) !important;
+}

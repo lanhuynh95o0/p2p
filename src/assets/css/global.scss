@@ -1,0 +1,421 @@
+@import 'assets/css/mixin';
+@import 'assets/css/button';
+@import 'assets/css/popover';
+@import 'assets/css/modal';
+@import 'assets/css/table';
+@import 'assets/css/variables.scss';
+body {
+  font-family: $base-font;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+@include create-class($attribute: 'margin-top', $list: $listMarginTop);
+@include create-class($attribute: 'margin-bottom', $list: $listMarginBottom);
+@include create-class($attribute: 'margin-left', $list: $listMarginLeft);
+@include create-class($attribute: 'margin-right', $list: $listMarginRight);
+@include create-class($attribute: 'padding', $list: $listPadding);
+@include create-class($attribute: 'height', $list: $listHeight);
+@include create-class($attribute: 'text-align', $list: $listTextAlign);
+@include create-class($attribute: 'width', $list: $listWidth);
+
+.ant-layout-content {
+  display: flex;
+  .content {
+    flex: 1;
+  }
+}
+
+// form-item
+.label-form-custom {
+  @include text-base(400, 14px, $dark-gray);
+  word-break: break-word;
+}
+
+.form-item-custom {
+  margin-bottom: 8px;
+  .ant-form-item-label {
+    padding-bottom: 4px;
+  }
+  label {
+    @include text-base(500, 12px);
+  }
+}
+.ant-form-item-has-error .ant-form-item-explain {
+  margin-top: 5px;
+  @include text-base(400, 12px, red);
+}
+
+.ant-select-dropdown {
+  //border-top: 2px solid $brand-color;
+  .ant-select-item {
+    line-height: 35px;
+    @include text-base(400, 16px);
+  }
+  .item-disabled {
+    background: #ccc !important;
+    color: white !important;
+  }
+  .ant-select-item-group {
+    @include text-base(600, 12px);
+    border-bottom-color: white;
+  }
+  .ant-select-item-option-grouped {
+    @include text-base(400, 16px);
+    padding-left: 10px;
+  }
+}
+// end form-item
+
+// flex
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.d-table {
+  display: table;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-sm-none {
+  @media (max-width: $mobile-screen) {
+    display: none !important;
+  }
+}
+
+.d-table-cell {
+  display: table-cell;
+}
+
+.va-m {
+  vertical-align: middle;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.font-weight-bold {
+  font-weight: bold !important;
+}
+
+.f-right {
+  float: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-md-right {
+  @media (min-width: $tablet-screen) {
+    text-align: right;
+  }
+}
+
+.text-sm-right {
+  @media (min-width: $mobile-screen) {
+    text-align: right;
+  }
+}
+
+.text-1-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.text-4-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.square:before {
+  content: '';
+  padding-top: 100%;
+  display: block;
+}
+
+.text-dark-gray {
+  color: $dark-gray !important;
+}
+
+.text-success {
+  color: $success !important;
+}
+
+.text-warning {
+  color: $warning !important;
+}
+
+.text-danger {
+  color: $error !important;
+}
+
+.bg-primary {
+  background-color: $input-bg-color;
+}
+
+.bg-success-light {
+  background-color: $success-light;
+}
+
+.bg-warning-light {
+  background-color: $warning-light;
+}
+
+.bg-danger-light {
+  background-color: $error-light;
+}
+
+.bg-error {
+  background: $error;
+}
+
+.scroll-y {
+  overflow-y: auto;
+}
+
+.fz-14 {
+  $font-size: 16px;
+}
+
+.fz-16 {
+  $font-size: 16px;
+}
+
+.fz-18 {
+  $font-size: 18px;
+}
+
+.fz-20 {
+  $font-size: 20px;
+}
+
+// end flex
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $size, $value in $common-sizes {
+      .text {
+        font-size: $value !important;
+      }
+      .p#{$infix}-#{$size} {
+        padding: $value !important;
+      }
+      .pl#{$infix}-#{$size} {
+        padding-left: $value !important;
+      }
+      .pr#{$infix}-#{$size} {
+        padding-right: $value !important;
+      }
+      .pt#{$infix}-#{$size} {
+        padding-top: $value !important;
+      }
+      .pb#{$infix}-#{$size} {
+        padding-bottom: $value !important;
+      }
+      .px#{$infix}-#{$size} {
+        padding-left: $value !important;
+        padding-right: $value !important;
+      }
+      .py#{$infix}-#{$size} {
+        padding-top: $value !important;
+        padding-bottom: $value !important;
+      }
+      .m#{$infix}-#{$size} {
+        margin: $value !important;
+      }
+      .ml#{$infix}-#{$size} {
+        margin-left: $value !important;
+      }
+      .mr#{$infix}-#{$size} {
+        margin-right: $value !important;
+      }
+      .mt#{$infix}-#{$size} {
+        margin-top: $value !important;
+      }
+      .mb#{$infix}-#{$size} {
+        margin-bottom: $value !important;
+      }
+      .mx#{$infix}-#{$size} {
+        margin-left: $value !important;
+        margin-right: $value !important;
+      }
+      .my#{$infix}-#{$size} {
+        margin-top: $value !important;
+        margin-bottom: $value !important;
+      }
+
+      .h#{$infix}-#{$size} {
+        height: $value !important;
+      }
+
+      .min-h#{$infix}-#{$size} {
+        min-height: $value !important;
+      }
+
+      .max-h#{$infix}-#{$size} {
+        max-height: $value !important;
+      }
+
+      .w#{$infix}-#{$size} {
+        width: $value !important;
+      }
+      .min-w#{$infix}-#{$size} {
+        min-width: $value !important;
+      }
+
+      .max-w#{$infix}-#{$size} {
+        max-width: $value !important;
+      }
+
+      .t#{$infix}-#{$size} {
+        top: $value !important;
+      }
+
+      .l#{$infix}-#{$size} {
+        left: $value !important;
+      }
+
+      .b#{$infix}-#{$size} {
+        bottom: $value !important;
+      }
+
+      .r#{$infix}-#{$size} {
+        right: $value !important;
+      }
+
+      .radius#{$infix}-#{$size} {
+        border-radius: $value !important;
+      }
+    }
+  }
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.ant-form-item-required {
+  label:before {
+    display: inline-block;
+    margin-right: 4px;
+    color: #ff4d4f;
+    font-size: 14px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    content: '*';
+  }
+}
+
+.phone-validate {
+  .ant-form-item-explain {
+    padding-left: 30%;
+  }
+}
+
+.file-name-custom {
+  color: black;
+  border-bottom: 1px solid;
+  cursor: pointer;
+  &:hover {
+    color: $link;
+  }
+}
+hr {
+  height: 2px;
+  background-color: $light-gray;
+  border: none;
+  margin: 0;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.resend-code-section {
+  @include text-base(400, 16px, #464747);
+  text-align: center;
+  .text-resend {
+    color: #0070c9;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  .test-resend-disabled {
+    color: #ccc;
+    margin-left: 5px;
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar,
+::-webkit-scrollbar:horizontal {
+  width: 5px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track:horizontal {
+  background-color: #f5f5f5;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:horizontal {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #d8d8d8;
+}
+
+.h-40 {
+  height: 40px !important;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+.ant-form-item-explain.ant-form-item-explain-error {
+  padding: 0 !important;
+}
+
+.ant-tooltip-inner {
+  @media (max-width: $mobile-screen) {
+    width: 150px;
+  }
+}

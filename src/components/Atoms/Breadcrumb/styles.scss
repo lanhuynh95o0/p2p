@@ -1,0 +1,14 @@
+@import 'assets/css/variables.scss';
+@import 'assets/css/mixin';
+
+.my-breadcrumb {
+  .my-breadcrumb-item {
+    @include text-base(400, 16px, $black);
+    &:hover {
+      color: $brand-color;
+    }
+  }
+  .active {
+    @include text-base(600, 16px, $black);
+  }
+}

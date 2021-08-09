@@ -1,0 +1,57 @@
+@import "assets/css/mixin";
+@import "assets/css/variables";
+@import "assets/css/google-map";
+
+.partner-marker-info {
+  background-color: $white;
+  width: $max-iw-width;
+
+  &__content {
+    padding: 7px 16px;
+    padding-left: 0px;
+    height: $max-iw-height;
+    overflow: auto;
+  }
+
+  .card-img-container {
+    display: inline-block;
+    height: $max-iw-height;
+    width: $max-iw-height;
+
+    img {
+      height: $max-iw-height;
+      width: $max-iw-height;
+    }
+  }
+
+  .card-title {
+    font-weight: 600;
+    font-size: 16px;
+    font-family: $base-font;
+    word-wrap: break-word;
+  }
+
+  .card-link {
+    .link-icon {
+      font-size: smaller;
+      position: relative;
+    }
+  }
+
+  .text-link {
+    color: $text-link-color;
+    cursor: pointer;
+  }
+
+  .text-link:hover {
+    color: $text-link-hover-color;
+  }
+
+  .card-address {
+    word-wrap: break-word;
+  }
+
+  .card-description {
+    word-wrap: break-word;
+  }
+}

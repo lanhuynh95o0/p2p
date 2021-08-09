@@ -1,0 +1,51 @@
+@import 'assets/css/mixin';
+
+.job-documents {
+  .body {
+    .doc-item-wrapper {
+      background-color: $white;
+
+      padding: 4px 16px;
+      margin: 8px 0;
+      border-bottom: 2px solid $input-bg-color;
+      .doc-item {
+        display: flex;
+        align-items: center;
+        .name {
+          @include text-base(400, 16px, $black);
+          flex: 1;
+          padding: 0 16px;
+        }
+      }
+      .doc-item:last-child {
+        border: none;
+      }
+    }
+  }
+  .footer {
+    border-top: 2px solid $light-gray;
+    padding-top: 16px;
+    margin-top: 16px;
+    @include text-base(300, 16px, $medium-gray);
+    text-align: right;
+
+    .label {
+      vertical-align: top;
+    }
+
+    .icon {
+      @include text-base(300, 24px, $medium-gray);
+      margin: 0 16px;
+    }
+  }
+
+  .info-header {
+    padding: 16px 0 8px 0;
+  }
+
+  .btn-add-attachment {
+    @media (max-width: $mobile-screen) {
+      padding: 0 4px;
+    }
+  }
+}

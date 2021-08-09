@@ -1,0 +1,184 @@
+$base-font: "Oxanium", sans-serif;
+
+$brand-color: #27aae1;
+
+$black: #444545;
+
+$white: #fcfcfc;
+
+$dark-gray: #878787;
+
+$medium-gray: #c7c8ca;
+
+$light-gray: #f5f5f5;
+
+$error: #da4d44;
+
+$warning: #f2c53e;
+
+$success: #27aae1;
+
+$link: #0070c9;
+
+$error-light: #faeeed;
+
+$warning-light: #fffaeb;
+
+$success-light: #e1f6ff;
+
+$text-base-color: #444545;
+
+$text-link-color: #0070c9;
+$text-link-hover-color: #008cff;
+
+$input-bg-color: #f5f5f5;
+$input-placeholder-color: #878787;
+
+$header-height: 76px;
+
+$listMarginTop: (
+  mt-5: 5px,
+  mt-10: 10px,
+  mt-20: 20px,
+  mt-30: 30px,
+  mt-40: 40px,
+  mt-50: 50px,
+  mt-60: 60px,
+  mt-70: 70px,
+  mt-80: 80px,
+  mt-90: 90px,
+  mt-100: 100px,
+);
+
+$listMarginBottom: (
+  mb-10: 10px,
+  mb-15: 15px,
+  mb-20: 20px,
+  mb-25: 25px,
+  mb-30: 30px,
+  mb-40: 40px,
+  mb-50: 50px,
+  mb-60: 60px,
+  mb-70: 70px,
+  mb-80: 80px,
+  mb-90: 90px,
+  mb-100: 100px,
+);
+
+$listMarginLeft: (
+  ml-5: 5px,
+  ml-10: 10px,
+  ml-20: 20px,
+  ml-30: 30px,
+  ml-40: 40px,
+  mlm-20: -20px,
+);
+
+$listMarginRight: (
+  mr-5: 5px,
+  mr-10: 10px,
+  mr-20: 20px,
+  mr-30: 30px,
+  mr-40: 40px,
+);
+
+$listPadding: (
+  p-10: 10px,
+  p-20: 20px,
+  p-30: 30px,
+  p-40: 40px,
+);
+
+$listWidth: (
+  w-10: 10px,
+  w-20: 20px,
+  w-30: 30px,
+  w-40: 40px,
+  w-10pc: 10%,
+  w-20pc: 20%,
+  w-30pc: 30%,
+  w-100pc: 100%,
+  w-10vw: 10vw,
+  w-20vw: 20vw,
+  w-30vw: 30vw,
+);
+
+$listHeight: (
+  h-10: 10px,
+  h-20: 20px,
+  h-30: 30px,
+  h-40: 40px,
+  h-100pc: 100%,
+);
+
+$listTextAlign: (
+  t-right: right,
+  t-left: left,
+  t-center: center,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+) !default;
+
+$common-sizes: () !default;
+$common-sizes: map-merge(
+  (
+    auto: auto,
+    550: 550px,
+    512: 512px,
+    500: 500px,
+    450: 450px,
+    480: 480px,
+    400: 400px,
+    350: 350px,
+    330: 330px,
+    300: 300px,
+    260: 260px,
+    235: 235px,
+    150: 150px,
+    120: 120px,
+    100: 100px,
+    90: 90px,
+    80: 80px,
+    70: 70px,
+    60: 60px,
+    50: 50px,
+    45: 45px,
+    30: 30px,
+    32: 32px,
+    25: 25px,
+    24: 24px,
+    20: 20px,
+    16: 16px,
+    15: 15px,
+    10: 10px,
+    8: 8px,
+    5: 5px,
+    4: 4px,
+    1: 1px,
+    0: 0px,
+    n5: -5px,
+    n8: -8px,
+    n10: -10px,
+    n15: -15px,
+    n16: -16px,
+    n20: -20px,
+    n25: -25px,
+    100p: 100%,
+    100vh: 100vh,
+    100vw: 100vw,
+    80 p: 80%,
+    75 p: 75%,
+    50 p: 50%,
+    25 p: 25%,
+  ),
+  $common-sizes
+);
+
+$mobile-screen: 600px;
+$tablet-screen: 768px 

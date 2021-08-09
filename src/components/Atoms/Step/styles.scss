@@ -1,0 +1,25 @@
+@import 'assets/css/variables';
+
+.my-tabs-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .header-tab {
+    display: flex;
+    .tab {
+      width: 55px;
+      border-bottom: 5px solid #C7C8CA;
+      margin-right: 10px;
+
+      @media (max-width: $mobile-screen) {
+        margin-right: 5px;
+      }
+    }
+    .tab-finished {
+      border-color: $brand-color;
+    }
+    .tab-current {
+      opacity: 0.5;
+    }
+  }
+}

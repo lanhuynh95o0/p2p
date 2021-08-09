@@ -1,0 +1,99 @@
+@import 'assets/css/mixin';
+
+$rowHeight: 48px;
+$nameWidth: 200px;
+
+#my-gantt-chart {
+  //overflow: auto;
+  position: relative;
+
+  .cell {
+    display: table-cell;
+    border-right: 2px solid $light-gray;
+    border-left: 2px solid $light-gray;
+    border-collapse: collapse;
+  }
+
+  .text-bold {
+    font-weight: bold;
+  }
+
+  .item-name {
+    @extend .cell;
+    height: $rowHeight;
+    min-width: $nameWidth;
+    width: $nameWidth;
+    max-width: $nameWidth;
+    vertical-align: middle;
+    cursor: pointer;
+    .name {
+      padding: 0 16px;
+      width: 100%;
+    }
+  }
+
+  .item-week {
+    @extend .cell;
+    height: $rowHeight;
+    min-width: 100px;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .item-month {
+    @extend .cell;
+    height: $rowHeight;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .ReactVirtualized__List {
+    overflow-x: auto !important;
+  }
+  .ReactVirtualized__Grid {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 500px !important;
+    outline: none;
+    .ReactVirtualized__Grid__innerScrollContainer {
+      width: 100% !important;
+      max-width: 100% !important;
+      height: 100%;
+      display: table;
+      @include text-base(300, 16px, $black);
+      overflow: auto !important;
+    }
+    .my-table-row {
+      display: table-row;
+      background-color: $white;
+      width: fit-content !important;
+      height: $rowHeight !important;
+    }
+  }
+  table {
+    background-color: $white;
+    width: 100%;
+    @include text-base(300, 16px, $black);
+  }
+
+  .item {
+    position: relative;
+    .fill-wrapper {
+      position: absolute;
+      left: 0;
+      height: 100%;
+      cursor: pointer;
+      padding: 8px 0;
+      cursor: pointer !important;
+
+      min-width: 7px;
+
+      z-index: 100;
+      .fill {
+        width: 100%;
+        height: 100%;
+        background-color: $brand-color;
+      }
+    }
+  }
+}

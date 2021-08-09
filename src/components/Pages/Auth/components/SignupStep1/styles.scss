@@ -1,0 +1,17 @@
+@import 'assets/css/mixin';
+.help-text {
+  max-width: 700px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  
+  @include text-base(400, 16px, #444545);
+
+  @media (min-width: $mobile-screen) {
+    margin-top: 20px;
+  }
+
+  .link {
+    color: $text-link-color;
+  }
+}

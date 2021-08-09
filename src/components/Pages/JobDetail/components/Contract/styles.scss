@@ -1,0 +1,26 @@
+@import 'assets/css/mixin';
+
+.contract-page {
+  .dropdown-contract {
+    width: 100%;
+    .ant-btn-default {
+      flex: 1;
+      height: auto;
+      border: none;
+      background-color: transparent;
+    }
+  }
+  .contract-preview {
+    display: flex;
+    align-items: center;
+    .contract-item {
+      flex: 1;
+      .file-name {
+        text-decoration: underline;
+        &:hover {
+          color: $text-link-color !important;
+        }
+      }
+    }
+  }
+}

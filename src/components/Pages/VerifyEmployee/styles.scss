@@ -1,0 +1,83 @@
+@import 'assets/css/mixin';
+
+.modal-verify-email {
+  .header {
+    margin-top: 40px;
+    text-align: center;
+    @include text-base(600, 16px);
+  }
+  .sub-header {
+    text-align: center;
+    margin-bottom: 20px;
+    @include text-base(400, 15px);
+  }
+  .input-code {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+
+
+.verify-employee-page {
+
+  @media (max-width: $mobile-screen) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .sign-up-header {
+    text-align: right;
+    padding: 0 10vw;
+    margin-top: 20px;
+    .question {
+      @include text-base(500);
+    }
+  }
+  .sign-up-content {
+
+    @media (min-width: $mobile-screen) {
+      padding-top: 100px;
+    }
+
+    .sign-up-step {
+      .content {
+        margin-top: 50px;
+
+        @media (max-width: $mobile-screen) {
+          margin-top: 25px;
+        }
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .header-step {
+          text-align: center;
+          @include text-base(600, 27px);
+        }
+        .sub-header {
+          text-align: center;
+          @include text-base(400, 17px);
+        }
+        .wrapper-step-2,.wrapper-step-1 {
+          max-width: 400px;;
+        }
+        .wrapper-step-3, .wrapper-step-4, .wrapper-step-5, .wrapper-step-6 {
+          max-width: 450px;
+        }
+
+        .wrapper-step-4 {
+          .upload-logo {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            .upload-control {
+              width: auto;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

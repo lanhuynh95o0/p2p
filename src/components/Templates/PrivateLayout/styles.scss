@@ -1,0 +1,29 @@
+@import 'assets/css/variables.scss';
+
+#p2p-link {
+  .site-layout {
+    min-height: 100vh;
+
+    .page-layout {
+      background: $light-gray;
+      margin-left: 200px;
+      transition: all 0.25s ease-in-out;
+
+      .page-content {
+        margin: 0 16px;
+
+        .content {
+          padding: 24px 0;
+          width: 100%;
+        }
+      }
+    }
+
+    #site-sidebar.ant-layout-sider-collapsed {
+      + .page-layout {
+        margin-left: 54px;
+        transition: all 0.25s ease-in-out;
+      }
+    }
+  }
+}

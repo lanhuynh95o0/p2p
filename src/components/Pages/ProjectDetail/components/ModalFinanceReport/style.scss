@@ -1,0 +1,63 @@
+@import 'assets/css/mixin';
+
+.finance-report-modal {
+  height: auto;
+  .my-modal-wrapper .my-modal-body {
+    max-width: 100%;
+  }
+
+  .ant-table-thead > tr > th {
+    text-align: center;
+  }
+
+  .financial-report {
+    max-width: 50%;
+    text-align: center;
+    margin: 0 auto;
+
+    @media (max-width: $mobile-screen) {
+      max-width: 100%;
+    }
+
+    .info-row {
+      display: flex;
+      align-items: center;
+    }
+
+    .info-price {
+      width: 100%;
+    }
+
+    .info-content {
+      @include text-base(300, 16px, $black);
+      line-height: 21px;
+    }
+
+    .info-name {
+      @include text-base(300, 16px, $dark-gray);
+      line-height: 21px;
+    }
+
+    .info-total {
+      @include text-base(600, 16px, $black);
+      line-height: 21px;
+    }
+
+    .text-left {
+      text-align: left;
+    }
+  }
+  .ant-avatar {
+    flex: 0 0 40px;
+  }
+}
+
+.participant-name {
+  @include text-base();
+  margin-bottom: 5px;
+}
+
+.job-name {
+  @include text-base(normal, 12px, $dark-gray);
+  margin-bottom: 0;
+}

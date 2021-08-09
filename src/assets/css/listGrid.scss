@@ -1,0 +1,115 @@
+@import 'assets/css/mixin';
+#my-grid-list {
+  .text-link {
+    color: $text-link-color !important;
+  }
+  .avatar {
+    height: 56px;
+    width: 56px;
+    margin-right: 16px;
+  }
+  .grid-item {
+    height: 100%;
+    display: flex;
+    .ant-card {
+      flex: 1;
+      display: flex;
+      .ant-card-body {
+        padding: 16px;
+        background-color: $white;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        .body {
+          flex: 1;
+        }
+      }
+    }
+    .text-md {
+      @include text-base(300, 16px, $black);
+    }
+    .text-extra {
+      @include text-base(300, 12px, $dark-gray);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+
+      @media (min-width: $mobile-screen) {
+        margin-bottom: 16px;
+      }
+
+      .info {
+        .code {
+          @include text-base(300, 12px, $dark-gray);
+          margin: 0;
+        }
+        .text-md {
+          word-break: break-word;
+        }
+        flex: 1;
+      }
+      .avatar-circle {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin-right: 16px;
+        margin-bottom: 16px;
+      }
+    }
+
+    .title {
+      @include text-base(600, 12px, $black);
+    }
+    .partner-participant-list {
+      padding-left: 16px;
+      .partner-participant-item {
+        display: inline-block;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-left: -14px;
+        height: 40px;
+        width: 40px;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+        div {
+          height: 100%;
+          width: 100%;
+          background-color: $white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include text-base(300, 16px, $black);
+        }
+      }
+    }
+  }
+
+  .grid-action {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .icon-grid {
+    font-size: 25px;
+    opacity: 0.6;
+    &:last-child {
+      margin-left: 10px;
+    }
+  }
+
+  .icon-grid-selected {
+    opacity: 1;
+  }
+
+  .break-word {
+    word-break: break-word;
+  }
+}

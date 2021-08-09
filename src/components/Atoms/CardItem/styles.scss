@@ -1,0 +1,42 @@
+@import 'assets/css/mixin';
+
+#card-item {
+  background-color: $white;
+  padding: 16px;
+  margin: 4px 0;
+
+  .card-header {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 16px;
+      height: 40px;
+      width: 40px;
+    }
+
+    .card-info {
+      flex: 1;
+
+      span:first-child {
+        @include text-base(300, 16px, $black);
+        display: block;
+      }
+
+      span:last-child {
+        @include text-base(300, 12px, $dark-gray);
+      }
+    }
+  }
+
+  .card-title {
+    @include text-base(600, 22px, $black);
+    margin: 12px 0 0 0;
+    line-height: 28px;
+  }
+
+  .card-description {
+    @include text-base(300, 16px, $black);
+    margin: 12px 0 0 0;
+  }
+}

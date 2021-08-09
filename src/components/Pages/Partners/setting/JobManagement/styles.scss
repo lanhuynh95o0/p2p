@@ -1,0 +1,49 @@
+@import 'assets/css/variables.scss';
+@import 'assets/css/mixin';
+
+.partners-setting {
+  .header-job {
+    @include text-base(600, 16px, $black);
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .job {
+    .job-info {
+      display: flex;
+      align-items: center;
+      .avatar {
+        width: 56px;
+        height: 56px;
+        object-fit: cover;
+      }
+
+      .name {
+        @include text-base(400, 16px, $dark-gray);
+        flex: 1;
+        padding: 0 8px;
+      }
+
+      .job-delete {
+        float: right;
+        @include text-base(400, 24px, $dark-gray);
+      }
+    }
+  }
+
+  .overview {
+    @include text-base(600, 12px, $black);
+    margin: 16px 0;
+  }
+
+  .info-name {
+    @include text-base(400, 16px, $medium-gray);
+    padding-bottom: 16px;
+  }
+
+  .info-value {
+    text-align: right;
+    @include text-base(400, 16px, $dark-gray);
+    word-break: break-word;
+  }
+}

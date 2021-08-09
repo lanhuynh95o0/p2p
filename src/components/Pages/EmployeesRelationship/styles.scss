@@ -1,0 +1,56 @@
+@import 'assets/css/variables.scss';
+@import 'assets/css/mixin';
+
+.partners-employee-list {
+  .bold {
+    font-weight: 600 !important;
+  }
+  .break-word {
+    word-break: break-all !important;
+  }
+  .text-sm {
+    @include text-base(300, 12px, $black);
+  }
+  .text-md {
+    @include text-base(300, 14px, $black);
+  }
+  .text-lg {
+    @include text-base(300, 16px, $black);
+  }
+  .text-gray {
+    color: $dark-gray !important;
+  }
+  .text-link {
+    color: $text-link-color !important;
+  }
+  .grid-action {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .icon-grid {
+    font-size: 25px;
+    opacity: 0.6;
+  }
+
+  .icon-grid-selected {
+    font-size: 25px;
+    opacity: 1;
+  }
+}
+
+.employee-action-button-item {
+  display: block;
+  margin-bottom: 20px;
+  padding-right: 50px;
+  @include text-base(300, 16px, $black);
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .employee-action-button-item-icon {
+    padding-right: 16px;
+    @include text-base(500, 24px, $black);
+    height: 24px;
+  }
+}

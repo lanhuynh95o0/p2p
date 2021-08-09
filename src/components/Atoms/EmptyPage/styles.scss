@@ -1,0 +1,16 @@
+@import 'assets/css/mixin';
+#page-not-found {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 30vw;
+  }
+  .content {
+    padding: 39px;
+    @include text-base(600, 22px, $black);
+    text-align: center;
+  }
+}

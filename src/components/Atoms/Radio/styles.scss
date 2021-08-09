@@ -1,0 +1,33 @@
+@import 'assets/css/mixin';
+#radio-custom {
+  text-align: left;
+  .ant-radio-input:focus + .ant-radio-inner {
+    border-color: $brand-color;
+    box-shadow: unset;
+  }
+  .ant-radio-checked .ant-radio-inner {
+    border-color: $brand-color;
+  }
+  .ant-radio-inner {
+    width: 24px;
+    height: 24px;
+  }
+  .ant-radio-inner::after {
+    background-color: $brand-color;
+    width: 16px;
+    height: 16px;
+  }
+  .ant-radio {
+    height: fit-content;
+  }
+  .ant-radio-wrapper {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .title {
+    @include text-base(600, 16px);
+  }
+  .sub-title {
+    @include text-base(400, 15px);
+  }
+}

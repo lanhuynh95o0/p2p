@@ -1,0 +1,37 @@
+@import 'assets/css/mixin';
+
+.note-footer {
+  border-top: 2px solid $light-gray;
+  padding-top: 16px;
+  margin-top: 16px;
+  @include text-base(300, 16px, $medium-gray);
+  text-align: right;
+
+  .note-label {
+    vertical-align: top;
+  }
+
+  .icon {
+    @include text-base(300, 24px, $medium-gray);
+    margin: 0 16px;
+  }
+
+  @media (max-width: $mobile-screen) {
+    .note-footer-block {
+      display: block;
+      text-align: left;
+
+      .anticon {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.modal-upsert-note {
+  #my-check-share {
+    .title {
+      @include text-base(500, 12px, $black);
+    }
+  }
+}

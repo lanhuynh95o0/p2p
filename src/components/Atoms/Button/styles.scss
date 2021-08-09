@@ -1,0 +1,15 @@
+@import 'assets/css/variables.scss';
+
+#p2p-link {
+  .site-button {
+    &.ant-btn-primary {
+      background: $brand-color;
+      border-color: $brand-color;
+      color: $white;
+    }
+
+    .ant-spin-dot-spin {
+      vertical-align: top;
+    }
+  }
+}

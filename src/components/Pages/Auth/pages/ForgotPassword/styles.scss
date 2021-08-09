@@ -1,0 +1,51 @@
+@import 'assets/css/mixin';
+@import 'assets/css/variables';
+
+.header-auth {
+  text-align: right;
+  padding: 0 10vw;
+  margin-top: 20px;
+
+  @media (max-width: $mobile-screen) {
+    padding: 0 5vw;
+  }
+  
+  .question {
+    @include text-base(500);
+  }
+}
+
+.forgot-password-container {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .forgot-password-form {
+
+    @media (max-width: $mobile-screen) {
+      width: calc(100% - 30px);
+    }
+
+    .content {
+      margin-top: 60px;
+      .text-forgot-email {
+        @include text-base(400, 14px, #0070c9);
+        span {
+          cursor: pointer;
+        }
+      }
+      .forgot-password-step {
+        text-align: center;
+      }
+      .header-step {
+        text-align: center;
+        @include text-base(600, 27px);
+      }
+      .sub-header {
+        text-align: center;
+        @include text-base(400, 16px);
+      }
+    }
+  }
+}

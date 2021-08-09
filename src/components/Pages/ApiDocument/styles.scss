@@ -1,0 +1,52 @@
+@import 'assets/css/mixin';
+.api-document-page {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 30px 20px;
+
+  h1 {
+    &.border-bottom {
+      border-bottom: 2px solid $light-gray;
+    }
+  }
+
+  p {
+    &.note {
+      color: $dark-gray;
+    }
+  }
+
+  .main {
+    color: $brand-color;
+  }
+
+  pre {
+    font-family: $base-font;
+    color: $dark-gray;
+  }
+
+  code {
+    color: #584773;
+    background-color: #fafafc;
+    border-color: #e3e4e7;
+    max-width: 100%;
+    display: inline-block;
+    line-height: 150%;
+    border-radius: 3px;
+    padding: 0 4px;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 14px;
+    vertical-align: middle;
+  }
+
+  ul {
+    &.server-response {
+      li {
+        &::marker {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

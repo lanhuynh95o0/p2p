@@ -1,0 +1,18 @@
+@import 'assets/css/variables.scss';
+@import 'assets/css/mixin';
+
+.modal-add-job {
+  .my-project {
+    display: flex;
+    padding: 16px;
+
+    span:first-child {
+      flex: 1;
+      @include text-base(300, 16px, $dark-gray)
+    }
+
+    span:last-child {
+      @include text-base(300, 16px, $black)
+    }
+  }
+}

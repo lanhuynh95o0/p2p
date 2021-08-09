@@ -1,0 +1,44 @@
+@import 'assets/css/mixin';
+@import 'assets/css/variables.scss';
+
+footer.footer-page {
+  background: white;
+
+  @media (max-width: $mobile-screen) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .line-info {
+    word-break: break-word;
+
+    @include text-base(400, 14px, $black);
+
+    @media (max-width: $mobile-screen) {
+      font-size: 12px;
+    }
+  }
+  .policy {
+    cursor: pointer;
+    a {
+      color: $black;
+      &:hover {
+        color: $brand-color;
+      }
+    }
+  }
+
+  .ant-row {
+    @media (max-width: 576px) {
+      display: block;
+
+      .ant-col {
+        margin-bottom: 0.5rem;
+  
+        h4 {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

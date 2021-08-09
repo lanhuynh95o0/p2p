@@ -1,0 +1,19 @@
+.phone-input-custom {
+  width: 100%;
+  input {
+    background: #f5f5f5;
+    border: none;
+    padding: 11.5px 12px;
+    width: 100%;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    font-size: 16px;
+    color: #444545;
+    resize: none;
+  }
+  input:focus {
+    outline: none;
+  }
+}

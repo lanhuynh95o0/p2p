@@ -1,0 +1,11 @@
+@import 'assets/css/mixin';
+.screen-successful {
+  .title {
+    @include text-base(600, 27px, $black);
+    margin: 16px;
+  }
+
+  .description {
+    @include text-base(400, 16px, $black);
+  }
+}

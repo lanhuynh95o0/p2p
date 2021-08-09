@@ -1,0 +1,16 @@
+@import 'assets/css/mixin';
+
+#invite-partner-job {
+  .btn-reject {
+    color: $black;
+  }
+
+  #detail-page {
+    .invite-info-header {
+      @media (max-width: $mobile-screen) {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}

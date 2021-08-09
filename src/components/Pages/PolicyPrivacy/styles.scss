@@ -1,0 +1,27 @@
+@import 'assets/css/variables.scss';
+
+.policy-privacy-page {
+  padding-top: 76px;
+  #site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+}
+.policy-privacy-content {
+  min-height: 75vh;
+  margin-top: 10px;
+  padding: 20px;
+  overflow: auto;
+  padding-bottom: 150px;
+
+  @media (max-width: $mobile-screen) {
+    padding-bottom: 300px;
+  }
+}
+.policy-privacy-footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

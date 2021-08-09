@@ -1,0 +1,30 @@
+@import 'assets/css/mixin';
+
+.my-table {
+  .col-header-bold {
+    font-weight: 600;
+  }
+  .my-table-header {
+    background-color: $white;
+  }
+  .text-display {
+    @include text-base(400, 16px, $black);
+  }
+  .display-text {
+    @include text-base(500, 16px, $dark-gray);
+  }
+  .ant-table-wrapper {
+    overflow-x: auto;
+  }
+  .ant-table-thead {
+    .ant-table-cell {
+      @include text-base(600, 16px, $black);
+    }
+  }
+  .ant-table-tbody {
+    .ant-table-cell {
+      max-width: 250px;
+      @include text-base(300, 16px, $black);
+    }
+  }
+}

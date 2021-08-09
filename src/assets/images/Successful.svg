@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="279px" height="149px" viewBox="0 0 279 149" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>147B562C-FF2B-4896-8D1B-82C8F07E626E@1.5x</title>
+    <defs>
+        <filter x="-30.6%" y="-33.4%" width="161.2%" height="166.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="6.123234e-17 -1" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-33.7%" y="-51.5%" width="167.4%" height="202.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1.41421356 1.41421356" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-43.5%" y="-47.9%" width="187.0%" height="195.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="0.707106781 0.707106781" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-53.4%" y="-38.9%" width="206.7%" height="177.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="0.707106781 -0.707106781" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-30.4%" y="-26.6%" width="160.8%" height="153.2%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="0.707106781 -0.707106781" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="05.-Partner-Dashboard💻" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="317_Sign-Up_Success" transform="translate(-582.000000, -131.000000)">
+            <g id="Successful" transform="translate(585.000000, 131.000000)">
+                <g id="Sticker-/-Successful" transform="translate(95.000000, 69.000000)">
+                    <circle id="Oval" fill="#85C555" cx="40" cy="40" r="40"></circle>
+                    <g id="Icons-/-Basic-/-Line-/-Checked-/-Default" transform="translate(16.000000, 16.000000)">
+                        <polygon id="Shape" fill="#FCFCFC" points="18 32.34 9.66 24 6.82 26.82 18 38 42 14 39.18 11.18"></polygon>
+                        <rect id="Rectangle" x="0" y="0" width="48" height="48"></rect>
+                    </g>
+                </g>
+                <g id="Confetti">
+                    <path d="M219.929322,124.303304 C218.193809,118.105043 210.1248,118.691061 210.1248,118.691061 L210.350191,123.018574 C215.015791,122.207165 217.9008,127.661635 217.9008,127.661635 L219.929322,124.303304 Z" id="Path" fill="#85C555" filter="url(#filter-1)"></path>
+                    <path d="M49.0150957,137.285843 C47.2795826,131.087583 39.2105739,131.696139 39.2105739,131.696139 L39.4359652,136.001113 C44.1015652,135.212243 46.9865739,140.666713 46.9865739,140.666713 L49.0150957,137.285843 Z" id="Path" fill="#85C555"></path>
+                    <path d="M143.161043,51.5469913 C152.514783,54.3869217 158.329878,43.6132174 158.329878,43.6132174 L152.627478,40.3675826 C149.855165,46.9715478 140.523965,46.2052174 140.523965,46.2052174 L143.161043,51.5469913 Z" id="Path" fill="#878787" filter="url(#filter-2)"></path>
+                    <path d="M91.2985043,63.1095652 C86.9484522,63.5603478 86.4300522,69.0373565 86.4300522,69.0373565 L89.3376,69.3754435 C89.3376,66.174887 93.3270261,64.8676174 93.3270261,64.8676174 L91.2985043,63.1095652 Z" id="Path" fill="#878787" filter="url(#filter-3)"></path>
+                    <path d="M53.2524522,38.016 C48.9024,38.4667826 48.384,43.9437913 48.384,43.9437913 L51.2915478,44.2818783 C51.2915478,41.0813217 55.2809739,39.7740522 55.2809739,39.7740522 L53.2524522,38.016 Z" id="Path-Copy" fill="#85C555" transform="translate(51.832487, 41.148939) scale(-1, 1) translate(-51.832487, -41.148939) "></path>
+                    <path d="M275.803826,103.071443 C276.434922,98.7439304 271.296,96.8957217 271.296,96.8957217 L270.236661,99.6229565 C273.347061,100.411826 273.61753,104.604104 273.61753,104.604104 L275.803826,103.071443 Z" id="Path" fill="#878787"></path>
+                    <path d="M235.391165,80.4797217 C236.022261,76.1522087 230.883339,74.304 230.883339,74.304 L229.824,77.0312348 C232.9344,77.8201043 233.20487,82.0123826 233.20487,82.0123826 L235.391165,80.4797217 Z" id="Path-Copy-2" fill="#878787" filter="url(#filter-4)" transform="translate(232.634437, 78.158191) scale(-1, -1) translate(-232.634437, -78.158191) "></path>
+                    <path d="M116.677565,6.17572174 C117.353739,1.8482087 112.1472,0 112.1472,0 L111.087861,2.72723478 C114.198261,3.51610435 114.49127,7.70838261 114.49127,7.70838261 L116.677565,6.17572174 Z" id="Path" fill="#878787"></path>
+                    <path d="M0.525913043,77.7299478 C-0.262956522,84.491687 8.73015652,86.1595826 8.73015652,86.1595826 L10.3529739,81.6517565 C4.96612174,81.1558957 4.17725217,74.8900174 4.17725217,74.8900174 L0.525913043,77.7299478 Z" id="Path" fill="#85C555" filter="url(#filter-5)"></path>
+                    <path d="M209.268313,51.4117565 C213.640904,51.659687 215.03833,46.3404522 215.03833,46.3404522 L212.220939,45.5290435 C211.702539,48.7070609 207.510261,49.3606957 207.510261,49.3606957 L209.268313,51.4117565 Z" id="Path" fill="#85C555"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

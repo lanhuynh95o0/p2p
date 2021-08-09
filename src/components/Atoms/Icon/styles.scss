@@ -1,0 +1,17 @@
+@import 'assets/css/variables.scss';
+@import 'assets/css/mixin';
+
+.my-icon-md {
+  @include text-base(300, 24px, $black);
+  span {
+    height: 24px;
+  }
+}
+
+.my-icon-md-dark-gray {
+  @include text-base(300, 24px, );
+  color: $dark-gray !important;
+  span {
+    height: 24px;
+  }
+}

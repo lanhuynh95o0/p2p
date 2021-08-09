@@ -1,0 +1,12 @@
+@import 'assets/css/mixin';
+
+.contract-detail-page {
+    &#detail-page{
+        @media (max-width: $tablet-screen) {
+            .detail-header, 
+            .status-text {
+                display: block;
+            }
+        }
+    }
+}

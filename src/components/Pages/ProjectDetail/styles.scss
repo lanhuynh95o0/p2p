@@ -1,0 +1,23 @@
+@import 'assets/css/mixin';
+@import 'assets/css/variables.scss';
+
+#detail-page {
+  &.project-detail {
+
+    @media (max-width: $mobile-screen) {
+      .project-info-header {
+        display: block;
+      }
+
+      .user-item {
+        .info {
+          margin-left: 16px;
+        }
+  
+        .name {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

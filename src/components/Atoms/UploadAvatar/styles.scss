@@ -1,0 +1,21 @@
+@import 'assets/css/mixin';
+.wrapper-upload-avatar {
+  .upload-avatar-custom {
+    height: inherit;
+    min-height: inherit;
+    .ant-upload-select-picture-card {
+      width: inherit;
+      height: inherit;
+      min-height: inherit;
+      margin: 0;
+    }
+  }
+}
+.action-upload {
+  margin-top: 10px;
+  @include text-base(400, 13px);
+  .link {
+    cursor: pointer;
+    color: $text-link-color;
+  }
+}

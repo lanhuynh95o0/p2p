@@ -1,0 +1,63 @@
+@import 'assets/css/mixin';
+#my-progress {
+  display: flex;
+  align-items: center;
+  .text-percent {
+    @include text-base(600, 12px, $black);
+    padding-right: 12px;
+  }
+
+  .progress-upload-pending {
+    .ant-progress-inner {
+      border-radius: 0;
+      .ant-progress-bg {
+        height: 4px !important;
+        // background: repeating-linear-gradient(
+        //   135deg,
+        //   $warning,
+        //   $warning 5px,
+        //   $warning 2px,
+        //   $warning 10px
+        // );
+        background: #27aae1;
+        border-radius: 0;
+      }
+    }
+  }
+  .progress-upload-normal,
+  .progress-upload-completed {
+    .ant-progress-inner {
+      border-radius: 0;
+      .ant-progress-bg {
+        height: 4px !important;
+        // background: repeating-linear-gradient(
+        //   135deg,
+        //   $brand-color,
+        //   $brand-color 5px,
+        //   #8ed154 2px,
+        //   #8ed154 10px
+        // );
+        background: #27aae1;
+        border-radius: 0;
+      }
+    }
+  }
+
+  .completed {
+    background-color: $success-light;
+    @include text-base(400, 14px, $success);
+    padding: 6px 16px;
+    border-radius: 10px;
+  }
+
+  .in-progress {
+    @include text-base(400, 14px, $warning);
+    padding: 6px 16px;
+    background-color: $warning-light;
+    border-radius: 10px;
+  }
+
+  .not-available {
+    @include text-base(400, 16px, $black);
+  }
+}

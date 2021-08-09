@@ -1,0 +1,295 @@
+@import 'assets/css/variables.scss';
+@import 'assets/css/mixin';
+
+$avatar-size: 192px;
+$avatar-mobile-size: 96px;
+
+.partners-setting {
+  input[type='file'] {
+    display: none;
+  }
+
+  .partners-setting-top {
+    .cover {
+      position: relative;
+      background-color: white;
+
+      .cover-wrapper {
+        position: relative;
+      }
+
+      video {
+        height: 28.6vw;
+      }
+
+      .cover-photo {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .button-edit-photo {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        background-color: $white;
+        cursor: pointer;
+        z-index: 1;
+        
+        .ant-btn {
+          padding: 0;
+          @include text-base(500, 15px, $brand-color);
+        }
+      }
+    }
+
+    .top-info-left {
+      position: relative;
+      margin-top: -100px;
+
+      @media (max-width: $mobile-screen) {
+        margin-top: -50px;
+        margin-bottom: 50px;
+      }
+
+      .avatar {
+        width: $avatar-size;
+        height: $avatar-size;
+        border: solid $white 5px;
+        object-fit: cover;
+        background: white;
+
+        @media (max-width: $mobile-screen) {
+          width: $avatar-mobile-size;
+          height: $avatar-mobile-size;
+        }
+      }
+
+      .partner-name {
+        display: inline-block;
+        vertical-align: bottom;
+
+        @media (max-width: $tablet-screen) {
+          display: block;
+          margin-left: 20px;
+        }
+
+        .input-partner-name {
+          background-color: transparent;
+          outline: none;
+          border: none;
+          width: 200px;
+          margin: 0;
+
+          &:active &:focus {
+            outline: none;
+          }
+
+          input {
+            border: none;
+            margin: 0;
+            border-bottom: solid 2px;
+            border-bottom-color: $medium-gray;
+            @include text-base(500, 27px, $black);
+            background-color: transparent;
+          }
+
+          .ant-input-group-addon {
+            background-color: transparent;
+            border: none;
+
+            .icon {
+              @include text-base(500, 22px, $dark-gray);
+            }
+          }
+
+          .ant-form-item-explain {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .top-info-right {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+
+      @media (max-width: $mobile-screen) {
+        align-items: center;
+      }
+
+      .wrapper {
+        display: table-cell;
+        vertical-align: bottom;
+        text-align: right;
+
+        @media (max-width: $mobile-screen) {
+          text-align: center;
+        }
+
+        span {
+          @include text-base(300, 16px, $black);
+        }
+
+        .ant-form-item-required::before {
+          content: '';
+        }
+
+        label {
+          @include text-base(300, 16px, $black);
+          content: 'Update URL';
+        }
+
+        .input-url {
+          border: none;
+          outline: none;
+          @include text-base(400, 16px, $black);
+        }
+      }
+    }
+
+    .edit-avatar {
+      background-color: transparent;
+      width: $avatar-size;
+      text-align: center;
+
+      label {
+        cursor: pointer;
+      }
+      .ant-btn {
+        padding: 0;
+        @include text-base(500, 14px, $brand-color);
+      }
+    }
+  }
+
+  .content {
+    padding: 5px 0 !important;
+
+    .block {
+      background-color: $white;
+      margin: 20px 0;
+
+      .title {
+        @include text-base(600, 22px, $black);
+      }
+
+      .param-wrapper {
+        background-color: $light-gray;
+        @include text-base(400, 16px, $black);
+        text-align: justify;
+      }
+
+      .info {
+        margin-bottom: 15px;
+
+        .info-label {
+          @include text-base(400, 12px, $dark-gray);
+          padding-bottom: 4px;
+        }
+
+        .info-input {
+          overflow: hidden;
+
+          input {
+            @include text-base(400, 16px, $black);
+          }
+
+          .ant-input-group {
+            .ant-input-group-addon {
+              border: none;
+
+              .select {
+                .ant-select-selector {
+                  border: none !important;
+                  background: $input-bg-color !important;
+                  box-shadow: none !important;
+
+                  .ant-select-selection-placeholder {
+                    color: $input-placeholder-color;
+                    @include text-base(400, 14px, $black);
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .skill-header {
+        display: inline-block;
+      }
+
+      .new-skill-button {
+        float: right;
+        @include text-base(500, 14px, $brand-color);
+        border: none;
+        outline: none;
+        box-shadow: none;
+        background-color: transparent;
+      }
+
+      .item-skill {
+        padding: 10px 0;
+        display: table;
+        width: 100%;
+
+        .skill-content {
+          display: inline-block;
+        }
+
+        .skill-title {
+          @include text-base(400, 14px, $black);
+          margin-bottom: 0;
+        }
+
+        .sub-skill-title {
+          @include text-base(400, 12px, $dark-gray);
+          margin-bottom: 0;
+        }
+
+        .icon-checked {
+          display: table-cell;
+          vertical-align: middle;
+          width: 1px;
+          padding: 0 5px;
+          @include text-base(400, 25px, $brand-color);
+        }
+
+        .icon-close {
+          @include text-base(400, 25px, $dark-gray);
+          width: 1px;
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
+
+      .statistic {
+        text-align: center;
+
+        .title {
+          @include text-base(400, 16px, $black);
+        }
+
+        .count-number {
+          @include text-base(600, 33px, $black);
+        }
+      }
+    }
+  }
+
+  .footer {
+    text-align: center;
+  }
+}
+.ant-form-item-explain.ant-form-item-explain-error {
+  padding: 0 !important;
+}
+.dropdown-group-skill.ant-select-item.ant-select-item-group {
+  color: #27aae1;
+  font-size: 17px;
+}

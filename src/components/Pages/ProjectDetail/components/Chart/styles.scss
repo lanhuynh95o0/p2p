@@ -1,0 +1,20 @@
+@import 'assets/css/mixin';
+
+.chart-full-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $light-gray;
+  z-index: 100;
+  padding: 16px 32px 0 16px;
+  display: flex;
+  flex-direction: column;
+  .my-gantt-chart {
+    flex: 1;
+  }
+  .my-gantt-chart-zoom {
+    zoom: 1.2;
+  }
+}

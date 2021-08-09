@@ -1,0 +1,21 @@
+@import 'assets/css/mixin';
+
+.verify-skill-container {
+  .header {
+    text-align: center;
+    @include text-base(600, 20px);
+  }
+  .sub-header {
+    text-align: center;
+    @include text-base(400, 16px);
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+}
+.list-skill-selected {
+  padding: 0 15px;
+  .skill-item {
+    border-bottom: 1px solid $light-gray;
+    padding: 4px 0;
+  }
+}

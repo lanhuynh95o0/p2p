@@ -1,0 +1,124 @@
+@import 'assets/css/mixin';
+
+.member-subscriptions-page {
+  .package-card {
+    height: 100%;
+    position: relative;
+
+    .recommend {
+      background-color: $black;
+      color: $white;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 14px;
+      height: 32px;
+      line-height: 32px;
+    }
+
+    .package-title {
+      @include text-base(600, 22px, $black);
+      line-height: 28px;
+    }
+
+    .package-subtitle {
+      @include text-base(600, 16px, $dark-gray);
+      line-height: 21px;
+    }
+
+    .package-price {
+      @include text-base(600, 33px, $black);
+      line-height: 40px;
+    }
+
+    .detail-storage {
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .content {
+      .content-item {
+        display: flex;
+        margin: 12px 0;
+
+        .icon-check {
+          color: $brand-color;
+          font-size: 26px;
+        }
+        .name {
+          @include text-base(400, 16px, #444545);
+          margin-left: 12px;
+          text-align: left;
+        }
+      }
+    }
+
+    .action {
+      position: absolute;
+      width: 100%;
+      bottom: 24px;
+      padding-right: 48px;
+
+      .suffix-icon {
+        position: relative;
+  
+        span[role='img'] {
+          position: absolute;
+          right: 16px;
+        }
+      }
+    }
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+}
+
+.subscription-package-modal {
+  .my-tabs-container {
+    padding-bottom: 70px;
+  }
+
+  .confirm-package,
+  .checkout-package {
+    .info-row {
+      display: flex;
+      align-items: center;
+    }
+
+    .info-price {
+      width: 100%;
+    }
+
+    .info-content {
+      @include text-base(300, 16px, $black);
+      line-height: 21px;
+    }
+
+    .info-name {
+      @include text-base(300, 16px, $dark-gray);
+      line-height: 21px;
+    }
+
+    .info-total {
+      @include text-base(600, 16px, $black);
+      line-height: 21px;
+    }
+
+    .anticon {
+      svg {
+        width: 24px;
+        height: 24px;
+        color: $dark-gray;
+      }
+    }
+
+    .text-left {
+      text-align: left;
+    }
+  }
+}

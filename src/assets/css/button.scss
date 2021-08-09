@@ -1,0 +1,120 @@
+@import 'assets/css/variables';
+@import 'assets/css/mixin';
+
+.btn-primary-custom[disabled],
+.btn-primary-custom[disabled]:hover {
+  border: none;
+  background: #c7c8ca;
+  color: white;
+}
+
+.btn-primary-custom {
+  background: $brand-color;
+  border-color: $brand-color;
+  color: $white;
+  font-weight: 400;
+  animation: 0s;
+  border-radius: 4px;
+  font-size: 15px;
+  &:hover,
+  &:focus {
+    background: $brand-color;
+    color: $white;
+    border-color: white;
+  }
+  @extend .my-btn-content;
+}
+
+.btn-outline-custom {
+  background: transparent;
+  border: none;
+  color: $brand-color;
+  font-weight: 500;
+  animation: 0s;
+  border-radius: 4px;
+  font-size: 14px;
+  &:hover,
+  &:focus {
+    background: transparent;
+    color: $brand-color;
+    border: none;
+  }
+}
+
+.btn-secondary-custom {
+  background: transparent;
+  border: none;
+  color: $brand-color;
+  font-weight: 500;
+  font-size: 15px;
+  animation: 0s;
+  border-radius: 4px;
+  box-shadow: none;
+  &:hover,
+  &:focus {
+    background: transparent;
+    color: $brand-color;
+    border: none;
+  }
+  height: auto;
+  padding: 0 12px;
+  @extend .my-btn-content;
+}
+
+.btn-no-style-custom {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.my-btn-content {
+  .anticon {
+    font-size: 24px;
+    height: 24px;
+    padding: 0;
+    vertical-align: middle;
+  }
+  height: 48px;
+  padding: 0 12px;
+  span {
+    vertical-align: middle;
+  }
+}
+
+.my-btn-sm {
+  .anticon {
+    font-size: 19px;
+    height: 19px;
+    padding: 0;
+    vertical-align: middle;
+  }
+  height: 28px;
+  font-size: 12px;
+  padding: 0 12px;
+}
+
+.my-btn-no-style {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  padding: 0;
+  &:hover {
+    border-color: $brand-color;
+    background-color: transparent;
+    color: $brand-color;
+  }
+  &:focus {
+    color: unset;
+    background-color: transparent;
+  }
+  @extend .my-btn-content;
+}
+.my-btn-gray {
+  @include text-base(500, 16px, $dark-gray);
+}
+
+.my-btn-out-line-brand {
+  @extend .my-btn-no-style;
+  color: $brand-color;
+}

@@ -1,0 +1,31 @@
+@import 'assets/css/variables';
+@import 'assets/css/mixin';
+
+$height-control: 48px;
+// Select control
+.multi-select {
+  width: 100%;
+  background: $light-gray !important;
+  color: $dark-gray !important;
+  .ant-select-selector {
+    border: none;
+    box-shadow: none;
+    height: $height-control;
+
+    // .ant-select-selection-search input {
+    //   height: $height-control;
+    // }
+
+    .ant-select-selection-placeholder {
+      text-align: left;
+      color: $input-placeholder-color;
+      opacity: 1;
+      line-height: $height-control;
+      color: $dark-gray;
+    }
+
+    .ant-select-selection-item {
+      line-height: $height-control;
+    }
+  }
+}

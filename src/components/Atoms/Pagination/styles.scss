@@ -1,0 +1,55 @@
+@import 'assets/css/mixin';
+.wrapper-paginate {
+  .d-table-cell {
+    @media (max-width: $mobile-screen) {
+      display: block
+    }
+
+    .text-display {
+      @include text-base(400, 16px, $black);
+    }
+    .display-text {
+      @include text-base(400, 16px, $dark-gray);
+    }
+    .select-display {
+      display: inline-block;
+      .ant-select-selector {
+        border: none !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        height: auto !important;
+        .ant-select-selection-placeholder {
+          color: $black;
+        }
+        .ant-select-selection-item {
+          @include text-base(600, 16px, $black);
+        }
+      }
+    }
+  }
+  
+  .my-table-pagination {
+    display: inline-block;
+
+    @media (min-width: $mobile-screen) {
+      float: right;
+    }
+
+    .anticon {
+      font-size: 16px;
+    }
+    .ant-pagination-item {
+      @include text-base(500, 16px, $dark-gray);
+      a {
+        @include text-base(500, 16px, $dark-gray);
+      }
+    }
+    .ant-pagination-item-active {
+      border: none;
+      background-color: transparent;
+      a {
+        @include text-base(600, 16px, $black);
+      }
+    }
+  }
+}
